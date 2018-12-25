@@ -9,7 +9,7 @@ class Image(object):
 
     def __init__(self, file_path, **kwargs):
         self.file_path = file_path
-        self.image = imread(file_path)
+        self.image = imread(file_path).data
 
     def show_image(self):
         """
